@@ -17,6 +17,15 @@
     max-height: 1500px !important;
   }
 
+  section {
+    img {
+      border: none;
+      background: none;
+      box-shadow: none;
+      margin: 0;
+    }
+  }
+
   code span.fragment.fade-out.visible {
     display: none;
   }
@@ -38,53 +47,21 @@
   }
 }
 
-.about_grid {
-  margin: 0 auto;
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-gap: 10px;
-  grid-auto-rows: minmax(100px, auto);
-  grid-template-areas:
-          "avatar avatar info1 info1"
-          "avatar avatar info2 info2"
-          "avatar avatar info3 info3"
-          "avatar avatar info4 info4"
-          "some-guy some-guy info5 info5";
-
-  //& > div {
-  //  border: 2px solid rgb(233,171,88);
-  //  border-radius: 5px;
-  //  background-color: rgba(233,171,88,.5);
-  //  color: #d9480f;
-  //}
-
-  & > * {
-    box-sizing: border-box;
+.about_me {
+  .container {
+    position:relative;
+    height: 420px;
+    vertical-align: middle;
+    .info-picture {
+      position:absolute;
+      margin-left: auto;
+      margin-right: auto;
+      left: 0;
+      right: 0;
+      .history-pics {
+        height: 350px;
+        padding-top: 100px;
+      }
+    }
   }
-
-  .avatar {
-    grid-area: avatar;
-  }
-
-  .history-1 {
-    padding-top: 30px;
-    grid-area: info1;
-  }
-  .history-2 {
-    grid-area: info2;
-  }
-  .history-3 {
-    grid-area: info3;
-  }
-  .history-4 {
-    grid-area: info4;
-  }
-  .history-5 {
-    grid-area: info5;
-  }
-  .some-guy {
-    height: 200px;
-    grid-area: some-guy;
-  }
-
 }
