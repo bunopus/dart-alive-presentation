@@ -29,8 +29,18 @@
 				<section data-background-image="img/monty-bg.first.png" data-background-transition="none"></section>
 				<section data-background-image="img/monty-bg.png" data-background-transition="none"></section>
 				<section data-background-image="img/monty-bg.title.png" data-background-transition="none"></section>
-				<section data-background-image="img/bayeux-bg.png" data-background-size="cover"></section>
-				<section><h2>Немного обо мне</h2></section>
+				<section data-background-image="img/bayeux-bg.png" data-background-size="cover" class="stretch">
+
+					<div class="about_grid">
+						<div class="avatar"><img src="img/eg.png" class="plain"/></div>
+						<div class="history-1">Железяки</div>
+						<div class="history-2">Шарепоинт</div>
+						<div class="history-3">С#</div>
+						<div class="history-4">Кофескрипт</div>
+						<div class="history-5">Райк</div>
+						<div class="some-guy"><img src="img/13_boy_with_sheep.png" style="height: 300px" class="plain"/></div>
+					</div>
+				</section>
 			</div>
 		</div>
 
@@ -47,7 +57,9 @@
 					{ src: 'plugin/markdown/markdown.js' },
 					{ src: 'plugin/notes/notes.js', async: true },
 					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
-				]
+				],
+				history: true,
+				controls: false
 			});
 		</script>
 	</body>
