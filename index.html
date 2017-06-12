@@ -29,7 +29,7 @@
 				<section data-background-image="img/monty-bg.first.png" data-background-transition="none"></section>
 				<section data-background-image="img/monty-bg.png" data-background-transition="none"></section>
 				<section data-background-image="img/monty-bg.title.png" data-background-transition="none"></section>
-				<section data-background-image="img/bayeux-bg.png" data-background-size="cover" class="stretch">
+				<section class="stretch">
 
 					<div class="about_me">
 						<div class="container">
@@ -43,7 +43,7 @@
 								<img src="img/poop_emoji.png" class="history-pics"/>
 							</div>
 							<div class="fragment current-visible info-picture" data-fragment-index="2">
-								<img src="img/gates.png" class="history-pics" style="height: 400px"/>
+								<img src="img/gates.png" class="history-pics"/>
 							</div>
 							<div class="fragment current-visible info-picture" data-fragment-index="3">
 								<img src="img/poop_emoji.png" class="history-pics"/>
@@ -68,6 +68,9 @@
 						</div>
 					</div>
 				</section>
+				<section>
+					<img src="img/chapter_1.png">
+				</section>
 			</div>
 		</div>
 
@@ -88,6 +91,16 @@
 				history: true,
 				controls: false
 			});
+
+            for (let slide of document.getElementsByTagName('section')){
+                if (!(slide.getAttribute('data-background') ||
+                    slide.getAttribute('data-background-video') ||
+                    slide.getAttribute('data-background-image') ||
+                    slide.getAttribute('data-background-iframe'))) {
+                    slide.setAttribute('data-background-image', 'img/bayeux-bg.png');
+                    slide.setAttribute('data-background-size', 'cover');
+                }
+            }
 		</script>
 	</body>
 </html>
