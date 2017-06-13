@@ -69,7 +69,48 @@
 					</div>
 				</section>
 				<section>
-					<img src="img/chapter_1.png">
+					<section>
+						<img src="img/chapter_1.png">
+					</section>
+					<section data-background="img/story/1_arthur.png"></section>
+					<section data-background="img/story/2_legacy.png"></section>
+					<section>
+						<pre><code data-trim style="font-size: 30px; line-height: 35px; overflow: hidden">
+							function pass(river, bridge, blackKnight) {
+							   //...
+						</code></pre>
+					</section>
+					<section data-background-video="video/1_fight.mp4"></section>
+					<section data-background="img/story/3_cut.png">
+						<pre><code data-trim style="font-size: 30px; line-height: 45px; overflow: hidden">
+function pass(river, bridge) {
+  if(arguments[2]) {
+    console.log("Ha! No Black Knight!");
+  }
+  bridge.walk(river);
+  //...
+}
+</code></pre>
+					</section>
+					<section data-background-video="video/2_scratch.mp4"></section>
+					<section data-background="img/story/4_error_bg.png">
+						<img src="img/story/4_error.png">
+					</section>
+					<section data-background-video="video/3_second_cut.mp4"></section>
+					<section data-background="img/story/5_fix_bg.png">
+						<pre><code data-trim style="font-size: 30px; line-height: 45px; overflow: hidden">
+function pass(river, bridge) {
+  //...
+  if(Array.isArray(bridge)) {
+    bridge = _buildBridge(bridge);
+  }
+  bridge.walk(river);
+  //...
+}
+</code></pre>
+					</section>
+					<section data-background-video="video/4_final.mp4"></section>
+					<section data-background="img/story/6_final.png">
 				</section>
 			</div>
 		</div>
