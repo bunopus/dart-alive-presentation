@@ -57,6 +57,14 @@
   img.block {
     margin-right: -5px;
   }
+
+  a {
+    color: black;
+    font-family: veflomasticacyrillicmedium, monospace;
+    &:hover {
+      color: #4E0000;
+    }
+  }
 }
 
 .about_me {

@@ -149,6 +149,7 @@ function pass(river, bridge) {
 				</section>
 				<section>
 					<section><img src="img/chapter_3.png"></section>
+					<section><h2 class="title">Нужен ли <u>мне</u> Dart?</h2></section>
 					<section>
 						<h2 class="title">Дарт не нужен<span class="fragment" data-fragment-index="0">, если</span></h2>
 						<ul>
@@ -158,6 +159,25 @@ function pass(river, bridge) {
 						</ul>
 						<img src="img/16_guy_in_shrubs.png" class="fragment current-visible" data-fragment-index="2" data-/>
 					</section>
+					<section data-background-color="white"><img src="img/flutter_logo.jpg"></section>
+					<section data-background-color="white"><img src="img/flutter_demo.gif"></section>
+					<section data-background-color="white"><img src="img/fuchsia_logo.jpg"></section>
+				</section>
+				<section>
+					<img src="img/24_shouting_guy.png">
+				</section>
+				<section>
+					<div style="font-size: 60px; line-height: 70px">
+						<p>
+							<img src="img/twitter.png" style="width: 50px" class="plain"><a href="https://twitter.com/bunopus">@bunopus</a><br><br>
+						</p>
+						<div>
+							<img src="img/vk-social.png" class="plain block small-logo"/>
+							<img src="img/facebook-social.png" class="plain block small-logo"/>
+							<img src="img/habr-social.png" class="plain block small-logo"/>  <a href="https://www.wrike.com/">@wriketeam</a>
+						</div>
+						<div><a href="http://dart-ru.herokuapp.com/">http://dart-ru.herokuapp.com/</a></div>
+					</div>
 				</section>
 			</div>
 		</div>
@@ -183,6 +203,7 @@ function pass(river, bridge) {
             for (let slide of document.getElementsByTagName('section')){
                 if (!(slide.getAttribute('data-background') ||
                     slide.getAttribute('data-background-video') ||
+                    slide.getAttribute('data-background-color') ||
                     slide.getAttribute('data-background-image') ||
                     slide.getAttribute('data-background-iframe'))) {
                     slide.setAttribute('data-background-image', 'img/bayeux-bg.png');
